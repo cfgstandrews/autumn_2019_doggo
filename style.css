@@ -1,0 +1,106 @@
+/*
+**  Sample CSS File
+*/
+
+body {
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#outer-container {
+  background-color: darkgrey;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+#inner-container {
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  padding: 20px;
+
+}
+
+/* --------------------------- */
+
+#top-block-containr {
+  height: 200px;
+  width: 80px;
+  margin: auto;
+}
+
+#top-left-block {
+  height: 200px;
+  float: left;
+  width: 45%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+}
+
+#top-right-block {
+  height: 200px;
+  float: right;
+  width: 45%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+}
+
+/* --------------------------- */
+
+#wishbone {
+  font-size: 26px;
+  font-family: "Times New Roman";
+  color: purple;
+}
+
+#wishbone-photo {
+  float: left;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+#wishbone-data {
+  float: right;
+  width: 60%;
+  margin-left: 20px;
+  padding-top: 10px;
+}
+
+/* --------------------------- */
+
+#dalmatians {
+  font-size: 26px;
+  font-family: "Times New Roman";
+  color: green;
+}
+
+#dalmations-photo {
+  float: left;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+#dalmation-data {
+  float: right;
+  width: 60%;
+  margin-left: 20px;
+  padding-top: 10px;
+}
+
+/* --------------------------- */
+
+#custom-form-container {
+  width: 97%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  float: left;
+  margin-top: 30px;
+  padding: 20px;
+}
