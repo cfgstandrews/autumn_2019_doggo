@@ -1,63 +1,114 @@
-<!-- We'll write some HTML code, about dogs ... -->
+<!-- CF:G Autumn 2019 - We'll write some HTML code, about dogs ... -->
 <!DOCTYPE html>
 <html>
 <head>
     <title>Doggo Website</title>
-    <!-- CSS -->
-    <!-- JavaScript -->
+    <!-- Import External CSS Files -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Import jQuery Dependency -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <!-- Import External JavaScript -->
+    <script src="script.js" type="text/javascript"></script>
+    <!-- Import External Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <h1>Doggo Website</h1>
+  <div id="outer-container">
 
-  <h3>By CF:G Beginners, Autumn 2019</h3>
+     <div id="inner-container">
+        <h1>Doggo Website</h1>
 
-  <!-- ID Example -->
-  <div id="wishbone">Wishbone</div>
+        <h3>By CF:G Beginners, Autumn 2019</h3>
 
-  <!-- Class Example -->
-  <div class="101_dalmations">Betty</div>
+        <!-- -->
+        <div id="top-block-container">
+            <!-- ID Example, Local Photo File Example -->
+            <div id="top-left-block">
 
-  <div class="101_dalmations">Joe</div>
+              <!-- Data Left -->
+              <img id="wishbone-photo" src="wishbone2.jpg" height="140" width="140" />
 
-<!-- Collar Example, unordered list -->
+              <!-- Data Right -->
+              <div id="wishbone-data">
+                  <div id="wishbone">Wishbone</div> <a href="https://en.wikipedia.org/wiki/Wishbone_(TV_series)" target="_blank"><button>Visit Website</button></a>
 
-Collar Colors
+                  <!-- Canine Food example, ordered list, float right -->
 
-  <ul>
-    <li>Green</li>
-    <li>Purple</li>
-  </ul>
+                  <h4>Favorite Dog Food Varieties (Ordered List Example)</h4>
 
-<!-- Canine Food example, ordered list -->
+                    <ol>
+                      <li>Fruit-based</li>
+                      <li>Meat-supplement-based</li>
+                      <li>Avocado-based</li>
+                    </ol>
+              </div>
 
-Dog Food Varieties
+            </div>
 
-  <ol>
-    <li>Fruit-based</li>
-    <li>Meat-supplement-based</li>
-  </ol>
+            <!-- Class Example, Remote Photo File Example -->
+            <div id="top-right-block">
 
-<!-- Dog Email Address, input field example -->
-  <input placeholder="Dog's Email Address"/>
+              <!-- Data Left -->
+              <img id="dalmations-photo" src="https://i1.wp.com/culturised.co.uk/wp-content/uploads/2017/06/Screen-Shot-2017-06-30-at-13.09.36.png?resize=1276%2C640&ssl=1" height="140" width="230" />
 
-  <!-- Doggo Owner City -->
-  City of Doggo's Owner
+              <!-- Data Right -->
+              <div id="dalmation-data">
+                  <div id="dalmatians">101 Dalmations</div> <a href="https://en.wikipedia.org/wiki/One_Hundred_and_One_Dalmatians" target="_blank"><button>Visit Website</button></a>
 
-  <select id="city-select-menu">
-    <option value="St Andrews">St Andrews</option>
-    <option value="Edinburgh">Edinburgh</option>
-  </select>
+                  &nbsp;&nbsp;
 
-  <!-- Personal Message about the Doggo -->
+                  Parent's Names:
+                  <span class="101_dalmations">Perdita</span>
+                  ,
+                  <span class="101_dalmations">Pongo</span>
 
-  <textarea class="message-area"></textarea>
+                  <!-- Collar Example, unordered list, float left -->
 
-  <!-- Save Entry Button -->
+                    <h4>Collar Colors (Un-Ordered List Example)</h4>
 
-  <button>Save Doggo Entry</button>
+                      <ul>
+                        <li>Blue</li>
+                        <li>Red</li>
+                      </ul>
+                </div>
 
-  <!-- <span></span> -->
+            </div>
+        </div>
 
+        <!-- custom form container -->
+        <div id="custom-form-container">
+            <!-- Dog Email Address, input field example -->
+            Input Field Example
+            <input id="dog-email-address" placeholder="Dog's Email Address"/>
+
+            <br /><br />
+
+            <!-- Doggo Owner City -->
+            Select Menu Example, City of Doggo's Owner:
+
+            <select id="dog-owner-city-select-menu">
+              <option value="St Andrews">St Andrews</option>
+              <option value="Edinburgh">Edinburgh</option>
+            </select>
+
+            <br /><br />
+
+            <!-- Personal Message about the Doggo -->
+            Text Area Example
+            <textarea id="owner-message-about-doggo" class="message-area"></textarea>
+
+            <br /><br />
+
+            <!-- Save Entry Button -->
+            <button id="save-doggo-submission-btn">Save Doggo Entry</button>
+
+          </div>
+
+
+
+
+        </div>
+    </div>
 </body>
 </html>
